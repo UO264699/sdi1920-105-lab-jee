@@ -17,7 +17,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 <body>
 
 
-<jsp:useBean id="contador" class="com.uniovi.sdi.Contador" scope="application"/>
+<jsp:useBean id="contador" class="com.uniovi.sdi.Contador"/>
 <jsp:setProperty name="contador" property="incremento" value="1"/>
 
 
@@ -29,6 +29,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 			<li><a href="incluirEnCarrito">Carrito</a></li>
 			<li><a href="login.jsp">Login</a></li>
 			<li><a href="admin.jsp">Administrar Productos</a></li>
+			<li><a href="productos">Productos Tienda</a></li>
 		</ul>
 		<div class = "nav navbar-right">
 		 <div class = "center-block"><jsp:getProperty name="contador"
