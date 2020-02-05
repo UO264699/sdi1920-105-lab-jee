@@ -20,7 +20,7 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/productos")
 public class ServletProductos extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	ProductosService ps = new ProductosService();
+	ProductosService p = new ProductosService();
 	List<Producto> productosTienda;
        
     /**
@@ -41,7 +41,7 @@ public class ServletProductos extends HttpServlet {
 		 (List<Producto>) request.getSession().getAttribute("productosTienda");
 		
 		
-		productosTienda = ps.getProductos();
+		productosTienda = p.getProductos();
 		request.getSession().setAttribute("productosTienda", productosTienda);
 		
 		

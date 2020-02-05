@@ -17,11 +17,11 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 <!-- Contenido -->
 <div class="container" id="contenedor-principal">
  <h2>Vista-Producto</h2>
- <c:forEach var="producto" begin="0" items="${productosTienda}">
+ <c:forEach var="product" begin="0" items="${productosTienda}">
  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
  <div>
- <img src="<c:out value="${producto.imagen}"/>" />
- <div><c:out value="${producto.nombre}"/></div>
+ <img src="<c:out value="${product.imagen}"/>" />
+ <div><c:out value="${product.nombre}"/></div>
  </div>
  </div>
  </c:forEach>
