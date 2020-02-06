@@ -97,4 +97,11 @@ public class ServletCarrito extends HttpServlet {
 	}
 	
 
+	/**
+	 * Insertamos nombre del producto(clave) y número de unidades(valor) en el carrito
+	 * 
+	 * @param carrito
+	 * @param claveProducto
+	 */
+	
 }
